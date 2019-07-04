@@ -12,8 +12,12 @@ import std.stdio;
 import std.range;
 
 void main(){
-      string name;
-      write("Hello, D!");
-      readf("%s\n", &name);
-      writeln("Hello ", name);
+      int numbr_1 = 1;
+      auto booleanTrue = true;
+      bool snowy_day = false;
+      writeln("boolean is: ", booleanTrue, " . \n Is it a snowy_day: ", snowy_day);
+      writeln("boolean max: ", bool.max);
+      writeln("boolean min: ", bool.min);
+      writefln("boolean: %s", true);
+
 }
