@@ -26,9 +26,11 @@ import std.parallelism;
 import std.concurrency;
 import std.range;
 void main(){
-      // increment
-      int incMe = 0;
-      writeln("increment: i++ ",incMe++); // this is trying to show the increment after add the last value of it
-      writeln("increment: ",incMe);
-      writeln("increment: ++i ",++incMe); // but here it's the opposite first add the increment value then display it
+      auto nowTime = Clock.currTime(UTC());
+      writeln(nowTime.year);
+      writeln(nowTime.month);
+      writeln(nowTime.day);
+      writeln(nowTime.hour);
+      writeln(nowTime.minute);
+      writeln(nowTime.second);
 }
