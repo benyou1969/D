@@ -25,12 +25,10 @@ import core.thread;
 import std.parallelism;
 import std.concurrency;
 import std.range;
-void main(){
-      auto nowTime = Clock.currTime(UTC());
-      writeln(nowTime.year);
-      writeln(nowTime.month);
-      writeln(nowTime.day);
-      writeln(nowTime.hour);
-      writeln(nowTime.minute);
-      writeln(nowTime.second);
+
+void main()
+{
+      auto seed = Clock.currTime(UTC()).second;
+      auto randomNumber = Random(seed);
+      writeln("random: ", uniform(20, 30,randomNumber));
 }
