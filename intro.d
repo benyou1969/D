@@ -26,9 +26,9 @@ import std.parallelism;
 import std.concurrency;
 import std.range;
 void main(){
-     // mathsss
-     writeln("1+1 = ", 1+1);
-     writeln("11-12 = ", (11-12));
-     writeln("13*14 = ", (13*14));
-     writeln("145%14 = ", (145%14));
+      // increment
+      int incMe = 0;
+      writeln("increment: i++ ",incMe++); // this is trying to show the increment after add the last value of it
+      writeln("increment: ",incMe);
+      writeln("increment: ++i ",++incMe); // but here it's the opposite first add the increment value then display it
 }
