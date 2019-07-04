@@ -26,8 +26,9 @@ import std.parallelism;
 import std.concurrency;
 import std.range;
 void main(){
-      auto sInt = to!string(20);
-      writeln("sInt is: " ,typeof(sInt).stringof);
-      auto iStr = to!int("10");
-      writeln("iStr is: " ,typeof(iStr).stringof);
+     // mathsss
+     writeln("1+1 = ", 1+1);
+     writeln("11-12 = ", (11-12));
+     writeln("13*14 = ", (13*14));
+     writeln("145%14 = ", (145%14));
 }
