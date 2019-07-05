@@ -28,7 +28,38 @@ import std.range;
 
 void main()
 {
-      auto seed = Clock.currTime(UTC()).second;
-      auto randomNumber = Random(seed);
-      writeln("random: ", uniform(20, 30,randomNumber));
+     int[10] a1;
+     int[]  a2 = [2,3,4,2,45];
+     a2[0] = 0;
+     writeln("index ", a2[0]);
+     int[] a3 = [];
+     a3 ~=3;
+     a3 ~=33;
+     a3 ~=354;
+     a3 ~=24;
+     a3 = a3.remove(2); // remove item from array
+     writeln(a3[]);
+
+     a3 = a3 ~ a2;// combine array
+     writeln(a3[]);
+
+      a3 = a3.remove!(x =>(x%2) == 0);
+     writeln(a3[]);
+
+     writeln(sort(a3[]));
+     writeln(reverse(a3[]));
+     writeln(a3.replace(3,22));
+
+      a3 = a3 ~ a2;
+     writeln(a3[0 .. 4]);
+
+     auto a4 = a3.dup;
+     writeln(a4[]);
+      a4[] *= 3;
+     writeln(a4);
+
+     string[][][] a5 = [[["23"],["12"],["656"]], [["4343"],["567"],["465"]], [["24"],["21312"],["56"]]];
+
+     writeln(a5[2][1]);
+
 }
